@@ -1,0 +1,20 @@
+services:
+  - type: web
+    name: writeback-api
+    env: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn main:app --host 0.0.0.0 --port 10000
+    envVars:
+      - key: SNOWFLAKE_USER
+        value: your_user
+      - key: SNOWFLAKE_PASSWORD
+        value: your_password
+      - key: SNOWFLAKE_ACCOUNT
+        value: your_account_identifier
+      - key: SNOWFLAKE_WAREHOUSE
+        value: your_warehouse
+      - key: SNOWFLAKE_DATABASE
+        value: your_db
+      - key: SNOWFLAKE_SCHEMA
+        value: your_schema
