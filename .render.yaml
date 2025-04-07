@@ -7,14 +7,14 @@ services:
     startCommand: uvicorn main:app --host 0.0.0.0 --port 10000
     envVars:
       - key: SNOWFLAKE_USER
-        value: your_user
+        value: ISAIDANI3
       - key: SNOWFLAKE_PASSWORD
-        value: your_password
+        value: HJ2WbbxXR3gbKDN
       - key: SNOWFLAKE_ACCOUNT
-        value: your_account_identifier
+        value: FHUXLIW-AW65453
       - key: SNOWFLAKE_WAREHOUSE
-        value: your_warehouse
+        value: TABLEAU
       - key: SNOWFLAKE_DATABASE
-        value: your_db
+        value: TABLEAU
       - key: SNOWFLAKE_SCHEMA
-        value: your_schema
+        value: PUBLIC
