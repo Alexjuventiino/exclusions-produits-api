@@ -28,7 +28,7 @@ async def enregistrer_exclusions(data: Payload):
 
         for produit in data.produits:
             cursor.execute("""
-                INSERT INTO exclusions (id_produit, rythme_date, utilisateur)
+                INSERT INTO TABLEAU.PUBLIC.exclusions (id_produit, rythme_date, utilisateur)
                 VALUES (%s, %s, %s)
             """, (produit.id_produit, data.rythme_date, data.utilisateur))
 
